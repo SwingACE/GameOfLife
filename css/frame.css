@@ -16,6 +16,13 @@ div#SystemOperation
 	padding: 0;
 	margin-right: 0;
 }
+div#Introduction
+{
+	position: absolute;
+	left: 1050px;
+	top: 90px;
+	width: 300px;
+}
 ul
 {
 	list-style: none;
