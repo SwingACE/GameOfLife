@@ -1,0 +1,40 @@
+body
+{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+h1
+{
+	text-align:center;
+}
+div#SystemOperation
+{
+	position: absolute;
+    left: 200px;
+	top: 70px;
+	width: 80px;
+	padding: 0;
+	margin-right: 0;
+}
+ul
+{
+	list-style: none;
+	height: 800px;
+	width: 80px;
+	padding: 0;
+	margin-right: 0;
+}
+li
+{
+	margin-bottom: 30px;
+}
+input
+{
+	width: 80px;
+}
+canvas
+{
+	position: absolute;
+    left: 380px;
+    top: 70px;
+}
