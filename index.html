@@ -18,15 +18,24 @@
 				<li><input type="button" value="Continue" onclick="Continue()">
 			</ul>
 		</div>
-		<canvas id="map" onmousedown="presetGrid(event)" height="500" width="500">
+		<canvas id="map" onmousedown="presetGrid(event)" height="600" width="600">
 		</canvas>
+		<div id="Introduction">
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Introduction<br/>
+			Click on the grid to preset cell states<br/>
+			Start: start game<br/>
+			Random: system will preset all the cell states randomly, while you can still set states by clicking afterwards<br/>
+			Reset: reset game<br/>
+			Stop: pause game<br/>
+			Continue: resume to game
+		</div>
 		<script>
 			var canv = document.getElementById('map');
-                	var map = canv.getContext('2d');
+            var map = canv.getContext('2d');
 			var authorityOfOperationOnGrid = true;
 			var isStart = false;
 			var isStop = false;
-			var sizeOfCell = Math.floor(500/sizeOfGrid);
+			var sizeOfCell = Math.floor(600/sizeOfGrid);
 			var timer;
 			Grid.initGrid();
 			drawGrid();
