@@ -18,7 +18,7 @@
 				<li><input type="button" value="Continue" onclick="Continue()">
 			</ul>
 		</div>
-		<canvas id="map" onmousedown="presetGrid(event)" height="600" width="600">
+		<canvas id="map" onmousedown="presetGrid(event)" height="500" width="500">
 		</canvas>
 		<script>
 			var canv = document.getElementById('map');
@@ -26,7 +26,7 @@
 			var authorityOfOperationOnGrid = true;
 			var isStart = false;
 			var isStop = false;
-			var sizeOfCell = Math.floor(600/sizeOfGrid);
+			var sizeOfCell = Math.floor(500/sizeOfGrid);
 			var timer;
 			Grid.initGrid();
 			drawGrid();
