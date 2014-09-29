@@ -1,3 +1,4 @@
+var sizeOfGrid = 30;
 //游戏逻辑类
 var Grid = {
 	grid:0,
