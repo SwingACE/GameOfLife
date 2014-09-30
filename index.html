@@ -3,8 +3,9 @@
 	<head>
 		<meta charset ="uft8" />
 		<title>Game of Life</title>
-		<script type="text/javascript" src="Storage.js"></script>
-		<script type="text/javascript" src="CellArray.js"></script>
+		<script type="text/javascript" src="mainlogic.js"></script>
+		<script type="text/javascript" src="interface.js"></script>
+		<script type="text/javascript" src="mouseevent.js"></script>
 		<link type ="text/css" rel="stylesheet" href="./css/frame.css" />
 	</head>
 	<body>
@@ -21,13 +22,13 @@
 		<canvas id="map" onmousedown="presetGrid(event)" height="600" width="600">
 		</canvas>
 		<div id="Introduction">
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Introduction<br/>
-			Click on the grid to preset cell states<br/>
-			Start: start game<br/>
-			Random: system will preset all the cell states randomly, while you can still set states by clicking afterwards<br/>
-			Reset: reset game<br/>
-			Stop: pause game<br/>
-			Continue: resume to game
+			<span id="intro-title">How to play this game?<br/></span>
+			<div class="intro">Click on the grid to preset cell states<br/></div>
+			<div class="intro"><div id="IntroToButton">Start</div>start game to see changes of the board<br/></div>
+			<div class="intro"><div id="IntroToButton">Random</div>randomly preset cell states<br/></div>
+			<div class="intro"><div id="IntroToButton">Reset</div>return to an empty board<br/></div>
+			<div class="intro"><div id="IntroToButton">Stop</div>suspend the game<br/></div>
+			<div class="intro"><div id="IntroToButton">Continue</div>continue the game<br/></div>
 		</div>
 		<script>
 			var canv = document.getElementById('map');
