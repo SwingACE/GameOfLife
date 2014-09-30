@@ -3,10 +3,14 @@ body
     margin-left: 10%;
     margin-right: 10%;
 }
+
 h1
 {
-	text-align:center;
+	position: absolute;
+	left: 570px;
+	top: 1px;
 }
+
 div#SystemOperation
 {
 	position: absolute;
@@ -16,6 +20,7 @@ div#SystemOperation
 	padding: 0;
 	margin-right: 0;
 }
+
 div#Introduction
 {
 	position: absolute;
@@ -23,6 +28,14 @@ div#Introduction
 	top: 90px;
 	width: 300px;
 }
+
+div#IntroToButton
+{
+	font-weight:bold;
+	font-size:25px;
+	color:black;
+}
+
 ul
 {
 	list-style: none;
@@ -31,17 +44,33 @@ ul
 	padding: 0;
 	margin-right: 0;
 }
+
 li
 {
 	margin-bottom: 30px;
 }
+
 input
 {
-	width: 80px;
+	width: 100px;
+	height: 60px;
 }
+
 canvas
 {
 	position: absolute;
     left: 380px;
     top: 70px;
+}
+
+#intro-title
+{
+	font-size: 30px;
+	font-weight:800;
+}
+
+.intro
+{
+	padding-top: 10px;
+	font-size: 20px;
 }
